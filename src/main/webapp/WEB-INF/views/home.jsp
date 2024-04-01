@@ -22,10 +22,10 @@
 	<div><a href="/Users/List">사용자 목록</a></div>
 	<div><a href="/Users/WriteForm">사용자 추가</a></div>
 	<div>&nbsp;</div>	
-	<div><a href="/Board/List?menu_id=MENU01">게시물 목록</a></div>
-	<div><a href="/Board/WriteForm?menu_id=MENU01">게시물 등록</a></div>
+	<div><a href="/BoardPaging/List?menu_id=MENU01">게시물 목록(페이징)</a></div>
+	<div><a href="/BoardPaging/WriteForm?menu_id=MENU01">게시물 등록(페이징)</a></div>
 	
-	<c:if test = "${sessionScope.login == null}"> 
+	<c:if test = "${sessionScope.login == null || login ==''}"> 
 		<div><a href="/LoginForm">로그인 창</a></div>
 	</c:if>
 	<div>
