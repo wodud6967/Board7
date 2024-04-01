@@ -46,11 +46,11 @@ input[readonly]{
       <table>
          <tr>
            <td>아이디</td>
-           <td><input type="text" name ="userid"></td>
+           <td><input type="text" name ="userid" value ="2"></td>
          </tr>
          <tr>
            <td>비밀번호</td> 
-           <td><input type="password" name ="passwd"></td>
+           <td><input type="password" name ="passwd" value ="1234"></td>
          </tr>
          <tr>
            <td colspan = "2">

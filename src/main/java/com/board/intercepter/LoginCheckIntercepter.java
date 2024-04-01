@@ -27,11 +27,11 @@ public class LoginCheckIntercepter implements HandlerInterceptor{
 			}
 			
 			//----------------------------------------------
-			if(userVo == null) {
-				//로그인되어 있찌 않다면 / LoginForm으로 이동;
-				response.sendRedirect("/LoginForm");
-				return false;
-			}
+			// 로그인 체키기능을 해지하려면 여기를 주석으로~
+			/*
+			 * if(userVo == null) { //로그인되어 있찌 않다면 / LoginForm으로 이동;
+			 * response.sendRedirect("/LoginForm"); return false; }
+			 */
 			
 		return HandlerInterceptor.super.preHandle(request, response, handler);
 	}
